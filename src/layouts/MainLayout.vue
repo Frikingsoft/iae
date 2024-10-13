@@ -1,7 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <Menu/>
+    <Menu overlay/>
     <q-page-container>
+      <div class="logo">
+         <img class="logo_utu" src="/logoutu.png">
+        
+        <h3 class="texto"> Instituto de Alta Especialización </h3>
+       <img class="logo_iae" src="/iae.png">
+      </div>
+      
       <router-view />
     </q-page-container>
   </q-layout>
@@ -15,50 +22,6 @@ defineOptions({
   name: 'MainLayout'
 })
 
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-]
 
 const leftDrawerOpen = ref(false)
 
@@ -66,3 +29,37 @@ function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 </script>
+<style scoped>
+  .logo{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .logo_utu{
+    width: 20%;
+    height: 50%;
+    margin-left: 64px;
+  }
+  .logo_iae{
+    width: 20%;
+    height: 50%;
+    margin-right: 64px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .texto{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: -1;
+    color: rgb(13, 50, 109);
+    text-shadow: 1px 1px 3px rgb(255, 255, 255), 2px 2px 4px rgb(13, 50, 109), 3px 3px 1px rgb(0, 0, 0);
+  }
+</style>
