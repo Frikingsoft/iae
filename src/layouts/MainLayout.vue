@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf" class="pagina">
     <Menu overlay/>
     <q-page-container>
       <div class="logo">
@@ -30,6 +30,9 @@ function toggleLeftDrawer () {
 }
 </script>
 <style scoped>
+  .pagina{
+    background-color: rgba(229, 229, 229, 0.517);
+  }
   .logo{
     width: 100%;
     height: 10vh;
@@ -58,7 +61,6 @@ function toggleLeftDrawer () {
     align-items: center;
     font-size: 4rem;
     font-weight: bold;
-    z-index: -1;
     color: rgb(13, 50, 109);
     text-shadow: 1px 1px 3px rgb(255, 255, 255), 2px 2px 4px rgb(13, 50, 109), 3px 3px 1px rgb(0, 0, 0);
   }

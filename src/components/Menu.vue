@@ -53,8 +53,7 @@
 </script>
 <style scoped>
    .fit{
-       background-color: rgb(13, 50, 109);
-    
+      background-color: rgb(13, 50, 109);
     }
     
 </style>
