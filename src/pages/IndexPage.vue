@@ -13,9 +13,7 @@
 <script setup>
 import Cursos from "../components/Cursos.vue"
 import Carousel from "../components/Carousel.vue"
-defineOptions({
-  name: 'IndexPage'
-});
+
 </script>
 <style scoped>
   .texto{

@@ -3,10 +3,11 @@
     <Menu/>
     <q-page-container>
       <div class="logo">
-         <img class="logo_utu" src="/logoutu.png">
+        <img class="logo_iae" src="/logoiae2.png">
+         
         
         <h3 class="texto"> Instituto de Alta Especialización </h3>
-       <img class="logo_iae" src="/iae.png">
+       <img class="logo_utu" src="/logoutu.png">
       </div>
         <router-view />
     </q-page-container>
@@ -50,10 +51,11 @@
   }
   .logo_iae{
     width: 20%;
-    height: 50%;
+    height: 200%;
     margin-right: 64px;
     padding-left: 70px;
     padding-right: 70px;
+    margin-top: 150px;
   }
   .texto{
     position: absolute;

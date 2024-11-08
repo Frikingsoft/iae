@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md col-8">
-    <img src="/qr.jpeg" class="imagen_qr">
+   
     <q-carousel
       swipeable
       animated

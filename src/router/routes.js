@@ -3,7 +3,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: () => import('pages/IndexPage.vue') ,name: 'inicio',}
     ]
   },
   {
@@ -19,6 +19,15 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Registro.vue') }
     ]
+  },
+  {
+    path: '/cambiar_configuracion',
+    component: () => import('layouts/MainLayout.vue'),
+    
+    children: [
+      { path: '', component: () => import('pages/Root.vue') },
+    ],
+    //meta: { requiresAuth: true }, // Protegida
   },
   {
     path: '/olvido',
