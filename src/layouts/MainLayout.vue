@@ -1,6 +1,6 @@
 <template>
-  <q-layout view="lHh Lpr lFf" class="pagina">
-    <Menu overlay/>
+  <q-layout class="pagina">
+    <Menu/>
     <q-page-container>
       <div class="logo">
          <img class="logo_utu" src="/logoutu.png">
@@ -8,30 +8,32 @@
         <h3 class="texto"> Instituto de Alta Especialización </h3>
        <img class="logo_iae" src="/iae.png">
       </div>
-      
-      <router-view />
+        <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Menu from "../components/Menu.vue"
+  import { provide, ref } from 'vue'
+  import Menu from "../components/Menu.vue"
+  const abrir_menu = ref(true)
+  const mostrar_menu = ref(true)
+  provide("abrir_menu",abrir_menu)
+  provide("mostrar_menu",mostrar_menu)
 
-defineOptions({
-  name: 'MainLayout'
-})
+  defineOptions({
+    name: 'MainLayout'
+  })
 
 
-const leftDrawerOpen = ref(false)
 
-function toggleLeftDrawer () {
-  leftDrawerOpen.value = !leftDrawerOpen.value
-}
 </script>
 <style scoped>
+
   .pagina{
-    background-color: rgba(229, 229, 229, 0.517);
+    background-color: rgba(134, 166, 216, 0.517);
+   
+   
   }
   .logo{
     width: 100%;
@@ -43,7 +45,7 @@ function toggleLeftDrawer () {
   }
   .logo_utu{
     width: 20%;
-    height: 50%;
+    height: 70%;
     margin-left: 64px;
   }
   .logo_iae{
@@ -59,7 +61,7 @@ function toggleLeftDrawer () {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: rgb(13, 50, 109);
     text-shadow: 1px 1px 3px rgb(255, 255, 255), 2px 2px 4px rgb(13, 50, 109), 3px 3px 1px rgb(0, 0, 0);

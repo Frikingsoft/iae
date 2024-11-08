@@ -1,7 +1,10 @@
 <template>
   <q-page class="row justify-center q-mt-md">
     <Carousel/>
-    <h2 class="col-12 flex flex-center texto"> Cursos   <q-icon name="fas fa-graduation-cap" color="#0D326D" class="q-ml-xl"/> </h2>
+    <h2 class="col-12 flex flex-center texto"> Cursos   <q-icon name="fas fa-graduation-cap" color="#0D326D" class="q-ml-xl"/>
+    
+     </h2>
+    
     <Cursos/>
    
   </q-page>

@@ -1,6 +1,6 @@
 <template>
-  <div class="col-9 row">
-    <div v-for="(curso, index) in cursos" :key="index" class="col-xs-12 col-sm-10 col-md-6 col-lg-4 col-xl-3 flex flex-center tarjeta">
+  <div class="col-10 row">
+    <div v-for="(curso, index) in cursos" :key="index" class="col-xs-12 col-sm-10 col-md-4 col-xl-4 flex flex-center tarjeta">
     <q-card class="my-card flex justify-center">
       <q-img :src="curso.imagen" class="imagen">
         <div class="absolute-top flex flex-center titulo_nombre">
@@ -32,17 +32,17 @@ traer_cursos();
 </script>
 <style scoped>
     .tarjeta{
-        width: 450px;
+        
         height: 450px;
         
     }
     .my-card{
-        width: 80%;
-        height: 80%;
+        width: 95%;
+        height: 95%;
         box-shadow: 1px 1px 1px rgb(73, 73, 73),2px 2px 2px rgb(255, 255, 255),
-  3px 3px 3px rgb(42, 41, 41),4px 4px 2px rgb(255, 255, 255),5px 5px 2px rgb(15, 15, 15);
-  border-left: 1px solid rgba(151, 151, 151, 0.3);
-  border-top: 1px solid rgba(151, 151, 151, 0.3);
+          3px 3px 3px rgb(42, 41, 41),4px 4px 2px rgb(255, 255, 255),5px 5px 2px rgb(15, 15, 15);
+        border-left: 1px solid rgba(151, 151, 151, 0.3);
+        border-top: 1px solid rgba(151, 151, 151, 0.3);
     }
     .imagen{
         width: 100%;
