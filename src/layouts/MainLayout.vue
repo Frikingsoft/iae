@@ -3,11 +3,9 @@
     <Menu/>
     <q-page-container>
       <div class="logo">
-        <img class="logo_iae" src="/logoiae2.png">
-         
-        
+        <img class="logo_iae" src="/iae.png">
         <h3 class="texto"> Instituto de Alta Especialización </h3>
-       <img class="logo_utu" src="/logoutu.png">
+        <img class="logo_utu" src="/logoutu.png">
       </div>
         <router-view />
     </q-page-container>
@@ -38,24 +36,23 @@
   }
   .logo{
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+   
   }
   .logo_utu{
-    width: 20%;
-    height: 70%;
+    width: 27%;
+    height: 60%;
     margin-left: 64px;
   }
   .logo_iae{
-    width: 20%;
-    height: 200%;
-    margin-right: 64px;
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-top: 150px;
+    width: 10%;
+    height: 60%;
+    margin-left: 20px;
+    padding-top: 10px ;
+    padding-bottom: 10px;   
   }
   .texto{
     position: absolute;
@@ -63,9 +60,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: rgb(13, 50, 109);
     text-shadow: 1px 1px 3px rgb(255, 255, 255), 2px 2px 4px rgb(13, 50, 109), 3px 3px 1px rgb(0, 0, 0);
+    
   }
 </style>
